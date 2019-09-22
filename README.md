@@ -2,7 +2,7 @@
 | -----------|----------|-----------|-------|
 | ![Statements](https://img.shields.io/badge/Coverage-82.69%25-yellow.svg "Make me better!") | ![Branches](https://img.shields.io/badge/Coverage-67.61%25-red.svg "Make me better!") | ![Functions](https://img.shields.io/badge/Coverage-84.06%25-yellow.svg "Make me better!") | ![Lines](https://img.shields.io/badge/Coverage-86.32%25-yellow.svg "Make me better!") |
 
-#Skeleton API
+# Skeleton API
 
 Production ready Rest API using Node.js with Typescript
 
@@ -10,11 +10,11 @@ Production ready Rest API using Node.js with Typescript
 $ npm run start
 ```
 
-###API Documentation
+### API Documentation
 
 You can open swagger-based API Documentation on [`http://<your host>:<port>/api-docs`](http://localhost:3000/api-docs).
 
-###Project structure
+### Project structure
 
 ```$xslt
 / <root>
@@ -43,7 +43,7 @@ You can open swagger-based API Documentation on [`http://<your host>:<port>/api-
 - tsconfig.json
 ```
 
-###Technology stacks
+### Technology stacks
 
 - Typescript with a strict mode
 - Express, latest version with async/await supports
@@ -51,5 +51,5 @@ You can open swagger-based API Documentation on [`http://<your host>:<port>/api-
 - PM2 to manage (process) cluster of your node application
 - Swagger-UI make easy to read API Documentation
 
-###Thanks to 
+### Thanks to 
 [Alex Permyakov](https://itnext.io/@alex.permyakov) for his [blog](https://itnext.io/production-ready-node-js-rest-apis-setup-using-typescript-postgresql-and-redis-a9525871407)
