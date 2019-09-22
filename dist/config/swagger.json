@@ -1,0 +1,64 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Skeleton API",
+        "version": "1.0.0"
+    },
+    "host": "localhost:3000",
+    "basePath": "/api/v1",
+    "schemes": ["http"],
+    "produces": ["application/json"],
+    "paths": {
+        "/participant/check": {
+            "get": {
+                "tags": ["Participant"],
+                "summary": "Check if email already exist",
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/common"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad request"
+                    }
+                },
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "query",
+                        "description": "Specifies the query string of email",
+                        "required": true,
+                        "type": "string"
+                    }
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "common": {
+            "type": "object",
+            "properties": {
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "OK",
+                        "ACCEPT",
+                        "AVAILABLE",
+                        "EXIST",
+                        "SUCCESS"
+                    ],
+                    "example": "OK"
+                },
+                "message": {
+                    "type": "string",
+                    "example": "Success"
+                }
+            }
+        }
+    }
+}
